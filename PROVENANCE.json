@@ -1,0 +1,524 @@
+{
+  "what": "Unofficial redesign preview of www.cypressranchvision.com. Not operated by, affiliated with or endorsed by Cypress Ranch Vision.",
+  "preview": "https://chris-sgen.github.io/cypressranchvision/",
+  "liveSite": "https://www.cypressranchvision.com/",
+  "generated": "2026-10-26T15:59:22.002Z",
+  "snapshot": {
+    "pagesReadUtc": {
+      "first": "2026-10-26T06:23:01.000Z",
+      "last": "2026-10-26T06:27:02.803Z",
+      "addresses": 122
+    },
+    "picturesDownloadedByUtc": "2026-10-26T06:39:57.928Z",
+    "browserPassOverTheLiveSiteUtc": {
+      "from": "2026-10-26T06:42:29.805Z",
+      "to": "2026-10-26T07:32:45.660Z"
+    }
+  },
+  "pages": 121,
+  "files": 1320,
+  "hardening": {
+    "robots": "noindex, nofollow, noarchive, nosnippet, noimageindex",
+    "robotsTags": 121,
+    "noReferrerTags": 121,
+    "jsonLdBlocksRemoved": 241,
+    "linkPreviewPictureTagsRemoved": 242,
+    "ogUrlRewritten": 121,
+    "siteNameRewritten": 121,
+    "descriptionsCarryingTheDisclosure": 121,
+    "twitterDescriptionAddedOnPagesThatHadNone": 106,
+    "pageDescriptionsReplaced": {
+      "promisedFormsOnlineOrAnOnlineRequestForm": [
+        "/online-forms.html",
+        "/request-an-appointment.html"
+      ]
+    },
+    "linkCardTitlesMarked": 121,
+    "iconLinksRemoved": 242,
+    "formsOfThePractice": {
+      "switchedOff": {
+        "/contact-us.html": "a message to the practice",
+        "/request-an-appointment.html": "an appointment request",
+        "/testimonials.html": "a review of the practice"
+      },
+      "hiddenGuards": 6,
+      "buttonsDisabled": 3,
+      "noticesInTheHeadOfThePage": 3,
+      "noticesAboveTheForm": 3,
+      "statusLines": 3
+    },
+    "picturesOfThePrivateBuildLeftOut": 0,
+    "photographsOfThePracticesPeopleShownAsOnTheLiveSite": [
+      {
+        "file": "staff-kellymai",
+        "shows": "a portrait of Dr. Kelly Mai",
+        "descriptionHere": "Kelly Mai, O.D.",
+        "pages": [
+          {
+            "page": "/",
+            "descriptionHere": "Kelly Mai, O.D.",
+            "descriptionOnTheLivePage": "Kelly Mai, O.D."
+          },
+          {
+            "page": "/our-team.html",
+            "descriptionHere": "Kelly Mai, O.D.",
+            "descriptionOnTheLivePage": ""
+          }
+        ]
+      },
+      {
+        "file": "drle-web",
+        "shows": "a portrait of Dr. Duc Le",
+        "descriptionHere": "Duc Le, O.D.",
+        "pages": [
+          {
+            "page": "/",
+            "descriptionHere": "Duc Le, O.D.",
+            "descriptionOnTheLivePage": "Duc Le, O.D."
+          },
+          {
+            "page": "/our-team.html",
+            "descriptionHere": "Duc Le, O.D.",
+            "descriptionOnTheLivePage": ""
+          }
+        ]
+      },
+      {
+        "file": "img-8250",
+        "shows": "a portrait of Dr. Isabelle Park",
+        "descriptionHere": "Isabelle Park, O.D.",
+        "pages": [
+          {
+            "page": "/",
+            "descriptionHere": "Isabelle Park, O.D.",
+            "descriptionOnTheLivePage": "Isabelle Park, O.D."
+          },
+          {
+            "page": "/our-team.html",
+            "descriptionHere": "Isabelle Park, O.D.",
+            "descriptionOnTheLivePage": ""
+          }
+        ]
+      },
+      {
+        "file": "img-kellymai",
+        "shows": "Dr. Kelly Mai, seated, in a white coat",
+        "descriptionHere": "Dr. Kelly Mai",
+        "pages": [
+          {
+            "page": "/our-team.html",
+            "descriptionHere": "Dr. Kelly Mai",
+            "descriptionOnTheLivePage": "Dr. Kelly Mai"
+          }
+        ]
+      },
+      {
+        "file": "img-ourpractice",
+        "shows": "three women in front of the practice's office, one of them in a white coat",
+        "descriptionHere": "About Cypress Ranch Vision",
+        "pages": [
+          {
+            "page": "/about-us.html",
+            "descriptionHere": "About Cypress Ranch Vision",
+            "descriptionOnTheLivePage": "About Cypress Ranch Vision"
+          }
+        ]
+      },
+      {
+        "file": "img-eyewear",
+        "shows": "a woman in a white coat before a wall of eyeglass frames",
+        "descriptionHere": "",
+        "pages": [
+          {
+            "page": "/eyeglasses-contacts/designer-frames.html",
+            "descriptionHere": "",
+            "descriptionOnTheLivePage": ""
+          }
+        ]
+      },
+      {
+        "file": "sidebar-keepintouch",
+        "shows": "the front of the practice's office under its sign, with three women standing before it",
+        "descriptionHere": "contact us",
+        "pages": {
+          "sidebarCardOn": 112,
+          "descriptionOnTheLivePages": "contact us"
+        }
+      },
+      {
+        "file": "sidebar-services",
+        "shows": "a woman in a white coat trying on eyeglasses at a mirror",
+        "descriptionHere": "all eye care services",
+        "pages": {
+          "sidebarCardOn": 112,
+          "descriptionOnTheLivePages": "all eye care services"
+        }
+      }
+    ],
+    "homePageSlideshow": [
+      {
+        "file": "crvision-hero-01",
+        "shows": "four smiling adults, two of them in glasses"
+      },
+      {
+        "file": "crvision-hero-02",
+        "shows": "three pairs of pink-tinted glasses"
+      },
+      {
+        "file": "crvision-hero-03",
+        "shows": "a woman looking through a trial frame that a hand adjusts"
+      }
+    ],
+    "outsideServicesNotLoaded": {
+      "services": {
+        "DearDoc blog posts": "/blog.html (a note in its head)",
+        "DearDoc chat assistant": "every page",
+        "DearDoc accessibility button": "every page",
+        "UserWay accessibility button": "every page"
+      },
+      "pagesWhoseSettingsWereTakenOff": 121,
+      "loaderTakenOutOfTheScript": true
+    },
+    "filmsOfAVideoSiteNotShown": [
+      {
+        "page": "/eye-care-services/avulux-lenses.html",
+        "id": "CYa2kvoJZZ4",
+        "still": "none"
+      },
+      {
+        "page": "/eye-care-services/avulux-lenses.html",
+        "id": "lYANZ1OR_o0",
+        "still": "none"
+      },
+      {
+        "page": "/newton.html",
+        "id": "CYa2kvoJZZ4",
+        "still": "none"
+      },
+      {
+        "page": "/newton.html",
+        "id": "lYANZ1OR_o0",
+        "still": "none"
+      }
+    ],
+    "offerBandsWithANote": {
+      "pages": [
+        "/",
+        "/eye-care-services/avulux-lenses.html"
+      ],
+      "note": "An offer of the live site. On the live site this picture opens over the page when a visitor arrives; it was showing there when the page was read, on October 26, 2026 (Central Time). This copy, which is not the practice's, cannot say whether the offer or its code still holds. See this page on the live site."
+    },
+    "liveTextNoteWithTheDayOfItsOffers": [
+      "/promotions.html"
+    ],
+    "liveTextNotes": {
+      "pages": [
+        "/accessibility-statement.html",
+        "/privacy-policy.html",
+        "/online-forms.html",
+        "/sitemap.html",
+        "/thank-you.html",
+        "/promotions.html"
+      ]
+    },
+    "linksThatLostMarks": {
+      "total": 243,
+      "host": "dryeyerescue.com",
+      "marks": [
+        "rfsn",
+        "utm_campaign",
+        "utm_medium",
+        "utm_source"
+      ]
+    },
+    "footerCopyrightLine": {
+      "kept": "© 2026 Cypress Ranch Vision. All rights Reserved",
+      "nameLinksToTheLiveSite": 121
+    },
+    "mapFramesWithNoReferrer": {
+      "frames": 121,
+      "alreadySoInThePrivateBuild": 121
+    },
+    "canonicalRemoved": [
+      "/404.html",
+      "/search/"
+    ],
+    "searchIndexEntriesReducedToTitleSectionAndShortNames": [
+      "/accessibility-statement.html",
+      "/blog.html",
+      "/contact-us.html",
+      "/online-forms.html",
+      "/privacy-policy.html",
+      "/promotions.html",
+      "/request-an-appointment.html",
+      "/sitemap.html",
+      "/testimonials.html",
+      "/thank-you.html"
+    ],
+    "loopAndSearchIndexAddressesMadeRelativeToThePage": 3,
+    "toolingHelperRemovedFromPages": 120,
+    "scriptsPatchedForAFilmFrame": [
+      "assets/js/site.cfb230222e.js"
+    ],
+    "outsideServicesLoaderTakenOutOf": "assets/js/site.cfb230222e.js",
+    "commentsTakenOut": {
+      "css": 299,
+      "js": 114
+    },
+    "aiLabels": {
+      "webp": 29,
+      "mp4": 2
+    },
+    "notShipped": [
+      ".htaccess",
+      "llms.txt",
+      "sitemap.xml",
+      "vercel.json",
+      "_headers",
+      "_redirects"
+    ],
+    "robotsTxt": "the private build's file is replaced by the preview's own (Disallow: /)",
+    "filesNothingNamesNotShipped": {
+      "total": 112,
+      "picturesOnlyTheLinkPreviewTagsNamed": 109,
+      "filesOnlyTheJsonLdNamed": 1,
+      "filesOfThePracticesIcon": 2
+    },
+    "fontLicences": [
+      "assets/fonts/OFL-Fraunces.txt",
+      "assets/fonts/OFL-Inter.txt"
+    ],
+    "preview_css": "assets/css/preview.css"
+  },
+  "generatedMedia": [
+    {
+      "file": "loop-library",
+      "kind": "loop",
+      "shows": "silver metal eyeglasses folded on an open blank notebook on a pale wooden table, beside a glass of water with a green sprig and a soft teal cup, with light rippling over the table like light off water, moving slowly and returning (made from one still, used as its first and last frame)",
+      "madeWith": "Higgsfield: kling-video/o3/first-last-frame, from a still made for it (fal.ai: nano-banana-pro)",
+      "files": 5,
+      "pages": [
+        "/blog.html"
+      ]
+    },
+    {
+      "file": "still-appointment",
+      "kind": "still",
+      "shows": "a closed soft teal book on a marble board beside a silver pen, an open sky blue glasses case holding silver frames, and a glass vase with a green sprig",
+      "madeWith": "fal.ai: nano-banana-pro",
+      "files": 4,
+      "pages": [
+        "/request-an-appointment.html"
+      ]
+    },
+    {
+      "file": "still-forms",
+      "kind": "still",
+      "shows": "a blank sheet on a wooden clipboard with a silver pen, deep green eyeglass frames folded beside it and a small teal dish, on white linen",
+      "madeWith": "fal.ai: nano-banana-pro",
+      "files": 4,
+      "pages": [
+        "/online-forms.html"
+      ]
+    },
+    {
+      "file": "still-myopia-clean",
+      "kind": "still",
+      "shows": "children's round soft teal eyeglass frames on a closed sky blue book beside a potted plant and three pebbles (a pretend size print that the model drew along one temple was taken off)",
+      "madeWith": "fal.ai: nano-banana-pro",
+      "files": 4,
+      "pages": [
+        "/myopia-control-faqs.html"
+      ]
+    },
+    {
+      "file": "still-reviews-alt-1",
+      "kind": "still",
+      "shows": "a folded blank card standing on a pale wooden table beside white anemones in a soft teal vase and folded thin silver eyeglass frames",
+      "madeWith": "fal.ai: nano-banana-pro",
+      "files": 4,
+      "pages": [
+        "/testimonials.html"
+      ]
+    },
+    {
+      "file": "still-services-alt-1",
+      "kind": "still",
+      "shows": "a round silver eyeglass frame on white linen beside a white tray holding seven ring-rimmed lenses in a row and a round occluder on a handle, with a sprig of eucalyptus",
+      "madeWith": "fal.ai: nano-banana-pro",
+      "files": 4,
+      "pages": [
+        "/services.html"
+      ]
+    }
+  ],
+  "generatedMediaRemarks": [
+    {
+      "id": "still-library",
+      "remark": "The still itself is not shown: the blog page's opening shows the loop made from it, with the loop's first frame as the poster. The private build also names it as the blog page's link-preview picture; this copy takes that tag off and does not ship the file."
+    },
+    {
+      "id": "loop-library",
+      "remark": "Five seconds, 24 frames a second, first and last frame the same picture: the rippling light drifts over the table and the notebook and returns; the glasses, the glass and the cup do not move. Encoded silent at 960 and 600 px, none of the service's tags carried over."
+    }
+  ],
+  "synthId": "the C2PA manifest of each fal.ai original says \"Applied imperceptible SynthID watermark.\" (a watermark in the picture itself); not tested for in the shipped files",
+  "reviews": {
+    "onTheTestimonialsPage": 10,
+    "onTheHomePage": 9,
+    "signedWithAFirstNameAndAnInitial": 9
+  },
+  "verification": {
+    "measured": "on a local server imitating a GitHub Pages project site under the project path",
+    "browser": "Chrome 155",
+    "previewChecksVerdict": "PASS",
+    "pageLoads": 241,
+    "picturesLoaded": 1776,
+    "loopsPlayed": 1,
+    "formTrials": {
+      "forms": 3,
+      "trials": 24,
+      "shipped": 6,
+      "control": 6,
+      "attributes": 6,
+      "guards": 6,
+      "controlsSeen": 6,
+      "enterPressed": 6,
+      "buttonClicked": 6
+    },
+    "search": {
+      "results": 30,
+      "outside": 0
+    },
+    "referencesRead": 27697,
+    "localReferences": 23097,
+    "binaries": {
+      "webp": 1178,
+      "mp4": 2,
+      "woff2": 6,
+      "svg": 0,
+      "aiLabels": 25
+    },
+    "selfTest": {
+      "defectsPlanted": 136,
+      "reportsExpected": 160,
+      "reportsGiven": 160,
+      "staticRules": 163,
+      "staticRulesExercised": 135,
+      "staticRulesNotExercised": {
+        "note": "rules of the verifier, which is written for previews of other sites too: 20 are about kinds of content this copy does not have (boxes for directions, pages written in Spanish, another address of the clinic, a place that is not the practice's, a former web address, a picture left out, a document of the practice, links the copy drops, cards that print the opening words of a noted page, affiliate redirects, credit applications), 4 about files the verifier cannot read at all, and 4 about missing files, a font file that does not name its project, or the private build's own records, which the self-test does not plant",
+        "rules": [
+          "a file of a picture this copy does not show",
+          "notes for the boxes for directions: not one for each box of the private build",
+          "a note for a box for directions that does not link to the live page",
+          "a note for a box for directions that does not name its destination",
+          "a note on a page written in Spanish that does not say its language",
+          "the note in Spanish is missing or doubled",
+          "another address of the clinic on a page without the note that says so",
+          "a place that is not the practice's",
+          "links to the practice's document: not one for each link of the private build",
+          "a link to the practice's document without rel=\"nofollow noopener\"",
+          "a picture this copy does not show",
+          "a link this copy does not carry (preview-config.mjs > dropLinks)",
+          "the opening words of a page with the live-text note, outside that page",
+          "a link through an affiliate redirect",
+          "a link that credits an application to the practice's account",
+          "a link to the former web address of the practice",
+          "the script cannot be read for comments",
+          "the search index cannot be read",
+          "the search index is not a list of entries",
+          "the search index names a picture this copy does not show",
+          "the search index holds the opening words of a page with the live-text note outside that page",
+          "the search index names a place that is not the practice's",
+          "the search index names another address of the clinic outside the page whose note says so",
+          "the font's name records cannot be read",
+          "a font file that does not name its project",
+          "missing (the host would answer an unknown address with its own page)",
+          "the mounts of outside services in the private build are not the ones preview-config.mjs names",
+          "missing (run preview-docs.mjs)"
+        ]
+      },
+      "rulesOfTheBrowserPass": 22,
+      "rulesOfTheFormTrials": 12,
+      "rulesOfThePublicAddressPass": 19
+    }
+  },
+  "pictures": {
+    "fromTheLiveSiteByFileName": 284,
+    "fromTheLiveSiteCountingEachVersion": 392,
+    "stockLibraryFileNames": 131,
+    "generatedFiles": 25,
+    "pagesShowingAGeneratedPicture": 6,
+    "pagesLedByAGeneratedPicture": [
+      "/blog.html",
+      "/myopia-control-faqs.html",
+      "/online-forms.html",
+      "/request-an-appointment.html",
+      "/services.html",
+      "/testimonials.html"
+    ],
+    "brandLogosDescribedByTheNameTheyShow": 13
+  },
+  "linksThatLeaveThisCopy": {
+    "p.adit.com": 1072,
+    "crystalpm.com": 244,
+    "dryeyerescue.com": 243,
+    "maps.app.goo.gl": 243,
+    "doxy.me": 242,
+    "google.com": 242,
+    "cypressranchvision.com": 128,
+    "facebook.com": 122,
+    "x.com": 122,
+    "instagram.com": 122,
+    "adobe.com": 1,
+    "contactsportal.com": 1,
+    "booking.adit.com": 1
+  },
+  "telephoneLinks": {
+    "2813930023": 835,
+    "9729227537": 121
+  },
+  "privateBuildAudit": {
+    "gate": {
+      "verdict": "NOT-READY",
+      "pass": 20,
+      "fail": [
+        "C04",
+        "C05",
+        "C06",
+        "C10",
+        "C16",
+        "C17",
+        "C18",
+        "C20",
+        "C22"
+      ],
+      "unproven": 0
+    },
+    "textUnits": {
+      "checked": 4360,
+      "found": 4351,
+      "leftOutWithReason": 9,
+      "missing": 0
+    },
+    "meanRecall": 99.93,
+    "sweep": {
+      "loads": 484,
+      "blocker": 0,
+      "major": 0,
+      "minor": 426,
+      "nit": 4
+    },
+    "decontamination": "CLEAN",
+    "addressTheBuildSkips": [
+      "/docs/getting-started/introduction/"
+    ],
+    "crawlAndDownloadFailures": {
+      "total": 9,
+      "crawlRunsTheSiteResetAndThatWereRunAgain": 2,
+      "theConsentFormTheLiveServerAnswersWithAnError": 2,
+      "wordsOfOldScriptsReadAsAddresses": 4,
+      "aPlaceholderLinkTheLivePageEditorRemembers": 1
+    }
+  }
+}
