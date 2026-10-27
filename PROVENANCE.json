@@ -2,7 +2,7 @@
   "what": "Unofficial redesign preview of www.cypressranchvision.com. Not operated by, affiliated with or endorsed by Cypress Ranch Vision.",
   "preview": "https://chris-sgen.github.io/cypressranchvision/",
   "liveSite": "https://www.cypressranchvision.com/",
-  "generated": "2026-10-26T16:10:19.566Z",
+  "generated": "2026-10-27T09:00:29.209Z",
   "snapshot": {
     "pagesReadUtc": {
       "first": "2026-10-26T06:23:01.000Z",
@@ -258,12 +258,12 @@
     "loopAndSearchIndexAddressesMadeRelativeToThePage": 3,
     "toolingHelperRemovedFromPages": 120,
     "scriptsPatchedForAFilmFrame": [
-      "assets/js/site.cfb230222e.js"
+      "assets/js/site.1faca8b620.js"
     ],
-    "outsideServicesLoaderTakenOutOf": "assets/js/site.cfb230222e.js",
+    "outsideServicesLoaderTakenOutOf": "assets/js/site.1faca8b620.js",
     "commentsTakenOut": {
-      "css": 299,
-      "js": 114
+      "css": 307,
+      "js": 123
     },
     "aiLabels": {
       "webp": 29,
@@ -369,7 +369,7 @@
     "signedWithAFirstNameAndAnInitial": 9
   },
   "verification": {
-    "measured": "on a local server imitating a GitHub Pages project site under the project path, then at the public address",
+    "measured": "on a local server imitating a GitHub Pages project site under the project path",
     "browser": "Chrome 155",
     "previewChecksVerdict": "PASS",
     "pageLoads": 241,
@@ -441,171 +441,6 @@
       "rulesOfTheBrowserPass": 22,
       "rulesOfTheFormTrials": 12,
       "rulesOfThePublicAddressPass": 19
-    },
-    "publicAddress": {
-      "filesIdentical": 1316,
-      "filesAsked": 1316,
-      "notFound": {
-        "status": 404,
-        "isThePage": true
-      },
-      "withoutSlash": {
-        "page": "search/",
-        "status": 301,
-        "location": "https://chris-sgen.github.io/cypressranchvision/search/"
-      },
-      "capitals": {
-        "asked": "SEARCH/",
-        "status": 404
-      },
-      "http": {
-        "status": 301,
-        "location": "https://chris-sgen.github.io/cypressranchvision/"
-      },
-      "browserPages": [
-        {
-          "page": "/",
-          "w": 1440,
-          "status": 200,
-          "requests": 51,
-          "loaded": 44,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/",
-          "w": 390,
-          "status": 200,
-          "requests": 52,
-          "loaded": 44,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/contact-us.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 11,
-          "loaded": 2,
-          "notes": 2,
-          "tiles": 0
-        },
-        {
-          "page": "/contact-us.html",
-          "w": 390,
-          "status": 200,
-          "requests": 11,
-          "loaded": 2,
-          "notes": 2,
-          "tiles": 0
-        },
-        {
-          "page": "/blog.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 109,
-          "loaded": 106,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/blog.html",
-          "w": 390,
-          "status": 200,
-          "requests": 110,
-          "loaded": 106,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/accessibility-statement.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 9,
-          "loaded": 2,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/accessibility-statement.html",
-          "w": 390,
-          "status": 200,
-          "requests": 9,
-          "loaded": 2,
-          "notes": 1,
-          "tiles": 0
-        },
-        {
-          "page": "/our-team.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 13,
-          "loaded": 6,
-          "notes": 0,
-          "tiles": 0
-        },
-        {
-          "page": "/our-team.html",
-          "w": 390,
-          "status": 200,
-          "requests": 13,
-          "loaded": 6,
-          "notes": 0,
-          "tiles": 0
-        },
-        {
-          "page": "/about-us.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 12,
-          "loaded": 5,
-          "notes": 0,
-          "tiles": 0
-        },
-        {
-          "page": "/about-us.html",
-          "w": 390,
-          "status": 200,
-          "requests": 12,
-          "loaded": 5,
-          "notes": 0,
-          "tiles": 0
-        },
-        {
-          "page": "/eye-care-services/avulux-lenses.html",
-          "w": 1440,
-          "status": 200,
-          "requests": 16,
-          "loaded": 9,
-          "notes": 3,
-          "tiles": 0
-        },
-        {
-          "page": "/eye-care-services/avulux-lenses.html",
-          "w": 390,
-          "status": 200,
-          "requests": 16,
-          "loaded": 9,
-          "notes": 3,
-          "tiles": 0
-        }
-      ],
-      "search": {
-        "results": 30,
-        "outside": 0
-      },
-      "formTrials": {
-        "forms": 3,
-        "trials": 24,
-        "shipped": 6,
-        "control": 6,
-        "attributes": 6,
-        "guards": 6,
-        "controlsSeen": 6,
-        "enterPressed": 6,
-        "buttonClicked": 6
-      },
-      "mapFrameRequests": 16
     }
   },
   "pictures": {

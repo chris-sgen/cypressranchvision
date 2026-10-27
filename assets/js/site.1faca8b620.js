@@ -147,6 +147,85 @@
     fit();
     window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(fit, 150); });
   });
+  $$('[data-slider]').forEach(function (box) {
+    var row = $('[data-slider-track]', box);
+    var cards = row ? Array.prototype.slice.call(row.children) : [];
+    if (cards.length < 2) return;
+    var arrow = '<svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg>';
+    var button = function (cls, label) {
+      var b = doc.createElement('button');
+      b.type = 'button'; b.className = 'slider__btn ' + cls;
+      b.innerHTML = arrow + '<span class="vh">' + label + '</span>';
+      return b;
+    };
+    var prev = button('slider__btn--prev', 'Previous reviews'), next = button('slider__btn--next', 'Next reviews');
+    var count = doc.createElement('p'); count.className = 'slider__count'; count.setAttribute('aria-hidden', 'true');
+    var said = doc.createElement('p'); said.className = 'vh'; said.setAttribute('role', 'status');
+    var bar = doc.createElement('div'); bar.className = 'slider__bar';
+    bar.appendChild(prev); bar.appendChild(count); bar.appendChild(next);
+    box.appendChild(bar); box.appendChild(said);
+    var DASH = String.fromCharCode(8211);
+    var pad = function () { var cs = getComputedStyle(row); return [parseFloat(cs.scrollPaddingLeft) || 0, parseFloat(cs.scrollPaddingRight) || 0]; };
+    var far = function () { return row.scrollWidth - row.clientWidth; };
+    var inView = function () {
+      var p = pad(), r = row.getBoundingClientRect(), left = r.left + p[0], right = r.right - p[1], first = -1, last = -1;
+      cards.forEach(function (c, i) {
+        var b = c.getBoundingClientRect();
+        if (b.width && Math.min(b.right, right) - Math.max(b.left, left) > b.width / 2) { if (first < 0) first = i; last = i; }
+      });
+      return { first: first, last: last };
+    };
+    var set = function (el, name, value) { if (el.getAttribute(name) !== value) el.setAttribute(name, value); };
+    var perView = 1, heading = -1, ticking = false, settle = 0, rt = 0;
+    var lastStart = function () { return Math.max(0, cards.length - perView); };
+    var update = function () {
+      var v = inView(), x = row.scrollLeft, end = far();
+      box.classList.toggle('is-ready', end > 1);
+      var first = v.first, last = v.last;
+      if (heading >= 0) { first = heading; last = Math.min(heading + perView, cards.length) - 1; }
+      if (first >= 0) {
+        var words = (first + 1) + (last > first ? DASH + (last + 1) : '') + ' of ' + cards.length;
+        if (count.textContent !== words) count.textContent = words;
+      }
+      set(prev, 'aria-disabled', String(heading >= 0 ? heading <= 0 : x <= 1));
+      set(next, 'aria-disabled', String(heading >= 0 ? heading >= lastStart() : x >= end - 1));
+      return v;
+    };
+    var go = function (dir) {
+      var v = inView();
+      if (v.first < 0) return;
+      var from = heading >= 0 ? heading : v.first;
+      var to = dir > 0 ? (Math.floor(from / perView) + 1) * perView : (Math.ceil(from / perView) - 1) * perView;
+      to = Math.max(0, Math.min(to, lastStart()));
+      var x = Math.max(0, Math.min(cards[to].getBoundingClientRect().left - row.getBoundingClientRect().left + row.scrollLeft - pad()[0], far()));
+      if (to === from && Math.abs(x - row.scrollLeft) < 1) return;
+      heading = to;
+      said.textContent = '';
+      update();
+      row.scrollTo({ left: x, behavior: reduce.matches ? 'auto' : 'smooth' });
+      clearTimeout(settle); settle = setTimeout(settled, 700);
+    };
+    var settled = function () {
+      var asked = heading >= 0;
+      heading = -1;
+      var v = update();
+      if (v.first < 0) return;
+      perView = v.last - v.first + 1;
+      said.textContent = asked ? (v.last > v.first ? 'Reviews ' + (v.first + 1) + ' to ' + (v.last + 1) : 'Review ' + (v.first + 1)) + ' of ' + cards.length : '';
+    };
+    prev.addEventListener('click', function () { if (prev.getAttribute('aria-disabled') !== 'true') go(-1); });
+    next.addEventListener('click', function () { if (next.getAttribute('aria-disabled') !== 'true') go(1); });
+    row.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('.review__toggle') && !row.querySelector('.review__toggle[aria-expanded="true"]')) row.style.setProperty('--slide-closed-h', cards[0].getBoundingClientRect().height + 'px');
+    }, true);
+    row.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); }
+      clearTimeout(settle); settle = setTimeout(settled, 160);
+    }, { passive: true });
+    window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { var v = update(); if (v.first >= 0 && heading < 0) perView = v.last - v.first + 1; }, 150); });
+    var v0 = update();
+    if (v0.first >= 0) perView = v0.last - v0.first + 1;
+  });
   $$('.video[data-video]').forEach(function (box) {
     var link = $('.video__link', box);
     if (!link) return;
@@ -173,7 +252,7 @@
     near.observe(row);
   });
   if (!reduce.matches && 'IntersectionObserver' in window) {
-    var targets = $$('.band__head, .cards > .card, .posts > .post-card, .links > .link-card, .reviews > .review, .doctors > .doctor, .split__copy, .logos > .logo, .quick > li, .faq > .faq__item, .products__list > .product, .equipment > li, .visit__info, .rail-card, .toc, .rail > li, .brands > .brand-tile, .why > .why__item, .welcome__copy, .testimony__quote, .cta__copy, .cta__hours, .plans > .plan, .figures__list > li');
+    var targets = $$('.band__head, .cards > .card, .posts > .post-card, .links > .link-card, .reviews:not(.reviews--slider) > .review, .slider, .doctors > .doctor, .split__copy, .logos > .logo, .quick > li, .faq > .faq__item, .products__list > .product, .equipment > li, .visit__info, .rail-card, .toc, .rail > li, .brands > .brand-tile, .why > .why__item, .welcome__copy, .testimony__quote, .cta__copy, .cta__hours, .plans > .plan, .figures__list > li');
     var zooms = $$('.split__media, .welcome__frame, .visit__map, .strip__item, .cta__map, .film, .video');
     var lines = $$('.span');
     var io = new IntersectionObserver(function (entries) {
